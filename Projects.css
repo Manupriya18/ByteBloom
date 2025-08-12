@@ -1,0 +1,75 @@
+.projects {
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card Styling */
+.project-card {
+  background: #ffffff; /* White for both light & dark */
+  color: #111827; /* Dark text inside card */
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.project-card p {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Tech Stack */
+.tech {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* Buttons */
+.project-card .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-card .btn:hover {
+  background: #374151;
+  transform: translateY(-2px);
+}
+
+/* Dark Mode */
+body.dark .projects {
+  background: #0d1117;
+}
+
+body.dark .project-card {
+  background: #ffffff; /* Keep white for contrast */
+  color: #111827;
+}
+
+body.dark .project-card .tech {
+  color: #374151;
+}

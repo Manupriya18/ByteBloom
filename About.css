@@ -1,0 +1,93 @@
+.about {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.about .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  position: relative;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #4b5563;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.about .intro {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 1s ease-out;
+}
+
+.education:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.education h3 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 1rem;
+  border-left: 4px solid #4b5563;
+  padding-left: 0.6rem;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e5e7eb;
+  transition: border-color 0.3s ease;
+}
+
+.education li:hover {
+  border-color: #4b5563;
+}
+
+.education strong {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

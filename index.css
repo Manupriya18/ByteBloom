@@ -1,0 +1,152 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+  line-height: 1.6;
+}
+
+/* ===== Light Mode ===== */
+body.light {
+  background: linear-gradient(to bottom right, #f4f5f7, #e5e7eb);
+  color: #1f2937;
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background: linear-gradient(to bottom right, #0d1117, #161b22);
+  color: #f0f0f0;
+}
+
+/* ===== Section Styling ===== */
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* ===== Section Titles ===== */
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3b82f6; /* Accent blue */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+  font-size: 1.05rem;
+}
+
+/* ===== Card Style ===== */
+.card {
+  background: #ffffff;
+  color: #111827; /* Ensures dark text on white */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card strong {
+  color: #111827; /* Makes bold text visible */
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+body.light .btn {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+body.light .btn:hover {
+  background: #374151;
+  transform: scale(1.05);
+}
+
+body.dark .btn {
+  background: #ffffff;
+  color: #111827;
+}
+
+body.dark .btn:hover {
+  background: #e5e7eb;
+  transform: scale(1.05);
+}
+
+/* ===== Links ===== */
+a {
+  color: #3b82f6; /* Accent blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Animations ===== */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* ===== Utility ===== */
+.text-center {
+  text-align: center;
+}
+
+/* ===== Education List Styling ===== */
+.education ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.education li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+body.dark .education li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
